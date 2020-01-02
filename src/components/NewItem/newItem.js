@@ -23,13 +23,24 @@ const NewItem = props => {
 
   return (
     <div onSubmit={addItemHandler} className="new-item">
-      <form>
+      <form style={{ height: "40px" }}>
         <input
           type="text"
           value={newItemText}
           onChange={newItemTextInput}
+          style={{ height: "36px", margin: "0px", padding: "0" }}
         ></input>
-        <button type="submit">ADD</button>
+        <button
+          style={{
+            height: "40px",
+            width: "100px",
+            margin: "0px",
+            padding: "0"
+          }}
+          type="submit"
+        >
+          ADD
+        </button>
       </form>
     </div>
   );

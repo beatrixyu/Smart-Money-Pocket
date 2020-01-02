@@ -1,26 +1,34 @@
-import React, { useState } from "react";
-import NewItem from "./components/NewItem/newItem";
-import ItemList from "./components/ItemList/itemList";
+import React from "react";
+import { BrowserRouter as Router, Link, Route } from "react-router-dom";
+import Dashboard from "./components/Dashboard/dashboard";
+import Main from "./components/main";
 import "./App.css";
 
 function App() {
-  const [defaultItems, setItems] = useState([
-    { id: 1, text: "Food & Drinks" },
-    { id: 2, text: "entertainment & Fun" },
-    { id: 3, text: "Trainning & Study" },
-    { id: 4, text: "Clothes & Shoes" }
-  ]);
-
-  const onListHandle = newItem => {
-    setItems(prevItems => prevItems.concat(newItem));
-  };
-
   return (
     <div className="App">
-      <ItemList items={defaultItems}></ItemList>
-      <NewItem onAddItem={onListHandle}></NewItem>
+      <Router>
+        <h1>Welcome , easily record your daily spending here!</h1>
+
+        <div>
+          <button>
+            <Link to="/homepage">Go To Add Money Spend</Link>
+          </button>
+          <button>
+            <Link to="/dashboard">Go To Money Record</Link>
+          </button>
+          <button>
+            <Link to="/">Go BACK</Link>
+          </button>
+        </div>
+        <Route path="/homepage" component={Main}></Route>
+        <Route path="/dashboard" component={Dashboard}></Route>
+        <Route exact path="/"></Route>
+      </Router>
     </div>
   );
 }
+
+// mongodb+srv://smart-pocket:1988915roro@cluster0-9eok3.mongodb.net/test?retryWrites=true&w=majority
 
 export default App;
