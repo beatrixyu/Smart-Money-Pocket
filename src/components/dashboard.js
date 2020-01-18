@@ -23,109 +23,83 @@ class Dashboard extends React.Component {
         firstname: "",
         lastname: "",
         email: "",
-        className: ["Fbw1", "Fbw2"],
-        schoolName: "DCI",
-        role: "trainer",
         attendance: [
           {
-            date: "01.12.2019",
+            date: "01.01.2019",
             entry: "10:39 am",
             exit: "04:45 pm",
-            timeDiff: "08:00 am",
-            status: "Late",
             note: "late train",
-            trainerNote: null,
             attachments: []
           },
           {
-            date: "02.12.2019",
+            date: "02.01.2019",
             entry: "12:00 am",
             exit: "17:00 am",
-            timeDiff: "07:00 am",
-            status: "Late",
             note: null,
-            trainerNote: "please offer me a prove, thanks ",
             attachments: []
           },
           {
-            date: "03.12.2019",
+            date: "03.01.2019",
             entry: "11:00 am",
             exit: "13:00 am",
-            timeDiff: "05:00 am",
-            status: "Late",
             note: "Bus was late. Plase find enclosed attachments",
-            trainerNote: null,
-            attachments: "03.12.2019_1.jpg",
+            attachments: "03.01.2019_1.jpg",
             alert: null
           },
           {
-            date: "04.12.2019",
+            date: "04.01.2019",
             entry: null,
             exit: null,
-            timeDiff: "02:00 am",
-            status: "Late",
             note: null,
-            trainerNote: "ok",
             attachments: []
           },
           {
-            date: "05.12.2019",
+            date: "05.01.2019",
             entry: "08:00 am",
             exit: "16:00 am",
-            timeDiff: "08:00 am",
-            status: "On Time",
+
             note: null,
-            trainerNote: null,
             attachments: []
           },
           {
-            date: "06.12.2019",
+            date: "06.01.2019",
             entry: "08:00 am",
             exit: "16:00 am",
-            timeDiff: "08:00 am",
-            status: "On Time",
+
             note: null,
-            trainerNote: null,
             attachments: []
           },
           {
-            date: "07.12.2019",
+            date: "07.01.2019",
             entry: "08:00 am",
             exit: "16:00 am",
-            timeDiff: "08:00 am",
-            status: "On Time",
+
             note: null,
-            trainerNote: null,
             attachments: []
           },
           {
-            date: "08.12.2019",
+            date: "08.01.2019",
             entry: "08:30 am",
             exit: "16:00 am",
             timeDiff: "04:00 am",
-            status: "On Time",
-            note: "Bus was late. Plase find enclosed attachments",
-            trainerNote: null,
-            attachments: "08.12.2019_1.jpg"
+
+            note: "food",
+            attachments: "08.01.2019_1.jpg"
           },
           {
-            date: "09.12.2019",
+            date: "09.01.2019",
             entry: "08:30 am",
             exit: "16:00 am",
-            timeDiff: "08:00 am",
-            status: "On Time",
+
             note: null,
-            trainerNote: null,
             attachments: []
           },
           {
-            date: "10.12.2019",
+            date: "10.01.2019",
             entry: "08:00 am",
             exit: "16:00 am",
-            timeDiff: "08:00 am",
-            status: "On Time",
-            note: null,
-            trainerNote: null,
+
+            note: "entermainment",
             attachments: []
           }
         ]
@@ -143,7 +117,6 @@ class Dashboard extends React.Component {
       note: "",
       trainerNote: "",
       attachments: "",
-      status: "",
       hours1: "",
       min1: "",
       hours2: "",
@@ -392,7 +365,8 @@ class Dashboard extends React.Component {
             height: "20vh",
             border: "1px solid grey",
             margin: "1%",
-            alignItems: "center"
+            alignItems: "center",
+            borderRadius: "10px"
           }}
         >
           <div>{this.state.tData[i].date}</div>

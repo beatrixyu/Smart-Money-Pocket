@@ -72,13 +72,13 @@ class Note extends React.Component {
             onClick={this.show}
             style={{
               height: "100px",
-              width: "100%",
+              width: "90%",
               color: "rgba(0, 0, 0, 0.8)",
               wordWrap: "break-all ",
               background: "skyblue"
             }}
           >
-            <span> 📝</span>
+            <span>📝</span>
             {this.props.note}
             {this.state.note}
           </Button>
@@ -88,23 +88,52 @@ class Note extends React.Component {
           onClose={this.hide}
           value="write here"
         >
-          <div>
+          <div
+            style={{
+              fontSize: "20px",
+              color: "white",
+              background: "skyblue",
+              height: "100%"
+            }}
+          >
             <Form id="hideAttForm" onSubmit={this.submitNote}>
-              <h4 for="text" style={{ fontSize: "14px", color: "purple" }}>
+              <h4
+                for="text"
+                style={{
+                  fontSize: "20px",
+                  color: "white",
+                  background: "skyblue"
+                }}
+              >
                 daily spend note
               </h4>
               <textarea
                 type="text"
                 onChange={this.changenote}
                 onClose={this.hide}
-                placeholder="write here..."
+                placeholder=""
+                style={{ height: "100px", width: "200px" }}
               />
               <br></br>
 
-              <Button type="button" onClick={this.hide} value="Cancel">
+              <Button
+                type="button"
+                onClick={this.hide}
+                value="Cancel"
+                style={{
+                  background: "lightgrey",
+                  margin: "2%",
+                  color: "white"
+                }}
+              >
                 Cancel
               </Button>
-              <Button type="button" value="Submit" onClick={this.submitNote}>
+              <Button
+                type="button"
+                value="Submit"
+                onClick={this.submitNote}
+                style={{ background: "yellow", margin: "2%", color: "white" }}
+              >
                 Submit
               </Button>
             </Form>
