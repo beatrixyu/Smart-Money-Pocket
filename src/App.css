@@ -53,15 +53,22 @@
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  margin: 0;
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 5px 25x 25x 25px;
   text-decoration: none;
-  font-size: 15px;
-  color: white;
+  font-size: 20px;
+  color: grey;
   display: block;
   transition: 0.3s;
+}
+
+.sidenav button {
+  width: 200px;
+  margin: 1%;
+  border: none;
 }
 
 .sidenav a:hover {
@@ -72,7 +79,7 @@
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 15px;
+  font-size: 18px;
   margin-left: 50px;
 }
 
