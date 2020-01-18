@@ -71,3 +71,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 # smart-money-pocket-react
 # smart-money-pocket-react
 # smart-money-pocket-react
+# smart-money-pocket-react
+# smart-money-pocket-react
+# smart-money-pocket
