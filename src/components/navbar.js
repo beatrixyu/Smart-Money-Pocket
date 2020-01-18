@@ -1,7 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Link, Route } from "react-router-dom";
-import Main from "./main";
-import Dashboard from "./dashboard";
 import "../App.css";
 
 class Sidebar extends React.Component {
