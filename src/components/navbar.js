@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Link, Route } from "react-router-dom";
 import Main from "./main";
-import Dashboard from "./Dashboard/dashboard";
+import Dashboard from "./dashboard";
 import "../App.css";
 
 class Sidebar extends React.Component {
@@ -51,6 +51,7 @@ class Sidebar extends React.Component {
           <span
             styles={{ fontSize: "30", cursor: "pointer" }}
             onClick={this.openNav}
+            onClose={this.closeNav}
           >
             &#9776; open
           </span>

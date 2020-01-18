@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Link, Route } from "react-router-dom";
-import Dashboard from "./components/Dashboard/dashboard";
+import Dashboard from "./components/dashboard";
 import Main from "./components/main";
 import "./App.css";
 
@@ -12,6 +12,11 @@ class App extends React.Component {
     ) {
       document.getElementById("mySidenav").style.width = "250px";
       document.getElementById("main").style.marginLeft = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+
+      document.getElementById("main").style.transition = " width 2s";
+
+      document.getElementById("main").style.display = "none";
     }
   };
 
@@ -22,6 +27,7 @@ class App extends React.Component {
     ) {
       document.getElementById("mySidenav").style.width = "0";
       document.getElementById("main").style.marginLeft = "0";
+      document.getElementById("main").style.display = "block";
     }
   };
 
@@ -47,10 +53,14 @@ class App extends React.Component {
                 </button>
               </div>
 
-              <div id="main">
+              <div id="main" align="left">
                 <span
-                  styles={{ fontSize: "30", cursor: "pointer" }}
+                  style={{
+                    fontSize: "15px",
+                    cursor: "pointer"
+                  }}
                   onClick={this.openNav}
+                  id="openText"
                 >
                   &#9776; open
                 </span>
