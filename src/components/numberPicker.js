@@ -9,13 +9,27 @@ const Wrapper = class Wrapper extends React.Component {
     this.state = {
       value: 100.0,
       currency: "U$",
-      showDecimal: true
+      showDecimal: true,
+      date: new Date()
     };
   }
 
-  handleChange(new_value) {
-    console.log("new value", new_value);
-    this.setState({ value: new_value });
+  handleChange(new_value, date) {
+    var today = new Date();
+    let dateOfMoney =
+      today.getFullYear() +
+      "-" +
+      (today.getMonth() + 1) +
+      "-" +
+      today.getDate() +
+      "-" +
+      today.getHours() +
+      ":" +
+      today.getMinutes() +
+      ":" +
+      today.getSeconds();
+    console.log("new value", new_value, dateOfMoney);
+    this.setState({ value: new_value, dateOfMoney });
   }
 
   render() {
