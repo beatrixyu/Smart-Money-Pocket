@@ -69,8 +69,11 @@ class App extends React.Component {
           </aside>
           <main>
             <h1>Welcome , easily record your daily spending here!</h1>
-            <Route path="/homepage" component={Main}></Route>
-            <Route path="/dashboard" component={Dashboard}></Route>
+            <Route path="/Smart-Money-Pocket/homepage" component={Main}></Route>
+            <Route
+              path="/Smart-Money-Pocket/dashboard"
+              component={Dashboard}
+            ></Route>
 
             <button>
               <Link to="/">Go BACK</Link>
