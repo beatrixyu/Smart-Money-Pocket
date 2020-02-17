@@ -1,5 +1,5 @@
 {
-  "homepage": "https://beatrixyu.github.io/smart-money-pocket",
+  "homepage": "https://github.com/beatrixyu/Smart-Money-Pocket",
   "name": "smart-money-pocket",
   "version": "0.1.0",
   "private": true,
@@ -23,7 +23,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "homepage": "https://beatrixyu.github.io/smart-money-pocket-react",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
