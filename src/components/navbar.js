@@ -36,10 +36,11 @@ class Sidebar extends React.Component {
             &times;
           </a>
           <Router>
-            <button style={{ width: "100px", margin: "1%", border: "none" }}>
+            <button style={{ width: "100px", border: "none" }}>
               <Link to="/homepage">Go To Add Money Spend</Link>
             </button>
-            <button style={{ width: "100px", margin: "1%" }}>
+            <hr></hr>
+            <button style={{ width: "100px", margin: "2%" }}>
               <Link to="/dashboard">Go To Money Record</Link>
             </button>
           </Router>

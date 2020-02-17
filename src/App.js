@@ -48,7 +48,7 @@ class App extends React.Component {
                 <button style={{ background: "white" }}>
                   <Link to="/homepage">Go To Add Money Spend</Link>
                 </button>
-                <button style={{ background: "white" }}>
+                <button style={{ background: "white", margin: "2%" }}>
                   <Link to="/dashboard">Go To Money Record</Link>
                 </button>
               </div>

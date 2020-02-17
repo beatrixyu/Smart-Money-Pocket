@@ -1,6 +1,7 @@
 import React from "react";
 import Rodal from "rodal";
 import { Popover, Button, Form } from "antd";
+import NumberPicker from "./numberPicker";
 // import "./css/dashboard.css";
 import "rodal/lib/rodal.css";
 import "antd/dist/antd.css";
@@ -34,8 +35,8 @@ class Note extends React.Component {
 
     let noteDate = date;
     noteDate = this.props.value; //get the date from dashbord to this child component
-    console.log("date:", date);
-    this.props.onClick(note, date);
+    console.log("date:", noteDate);
+    this.props.onClick(note, noteDate);
   };
 
   submitNote = event => {
@@ -75,14 +76,18 @@ class Note extends React.Component {
               width: "90%",
               color: "rgba(0, 0, 0, 0.8)",
               wordWrap: "break-all ",
-              background: "skyblue"
+              background: "skyblue",
+              marginBottom: "2%"
             }}
           >
             <span>📝</span>
             {this.props.note}
             {this.state.note}
           </Button>
+
+          <NumberPicker></NumberPicker>
         </Popover>
+
         <Rodal
           visible={this.state.visible}
           onClose={this.hide}

@@ -25,80 +25,77 @@ class Dashboard extends React.Component {
         email: "",
         attendance: [
           {
-            date: "01.01.2019",
+            date: "01.02.2020",
             entry: "10:39 am",
             exit: "04:45 pm",
-            note: "late train",
+            note: "train",
             attachments: []
           },
           {
-            date: "02.01.2019",
+            date: "02.02.2020",
             entry: "12:00 am",
             exit: "17:00 am",
-            note: null,
+            note: "transpotation",
             attachments: []
           },
           {
-            date: "03.01.2019",
+            date: "03.02.2020",
             entry: "11:00 am",
             exit: "13:00 am",
-            note: "Bus was late. Plase find enclosed attachments",
-            attachments: "03.01.2019_1.jpg",
+            note: "shisha",
+            attachments: "03.02.2020_1.jpg",
             alert: null
           },
           {
-            date: "04.01.2019",
+            date: "04.02.2020",
             entry: null,
             exit: null,
-            note: null,
+            note: "transpotation",
             attachments: []
           },
           {
-            date: "05.01.2019",
+            date: "05.02.2020",
+            entry: "08:00 am",
+            exit: "16:00 am",
+            note: "transpotation",
+            attachments: []
+          },
+          {
+            date: "06.02.2020",
+            entry: "08:00 am",
+            exit: "16:00 am",
+            note: "transpotation",
+            attachments: []
+          },
+          {
+            date: "07.02.2020",
             entry: "08:00 am",
             exit: "16:00 am",
 
-            note: null,
+            note: "transpotation",
             attachments: []
           },
           {
-            date: "06.01.2019",
-            entry: "08:00 am",
-            exit: "16:00 am",
-
-            note: null,
-            attachments: []
-          },
-          {
-            date: "07.01.2019",
-            entry: "08:00 am",
-            exit: "16:00 am",
-
-            note: null,
-            attachments: []
-          },
-          {
-            date: "08.01.2019",
+            date: "08.02.2020",
             entry: "08:30 am",
             exit: "16:00 am",
             timeDiff: "04:00 am",
 
             note: "food",
-            attachments: "08.01.2019_1.jpg"
+            attachments: "08.02.2020_1.jpg"
           },
           {
-            date: "09.01.2019",
+            date: "09.02.2020",
             entry: "08:30 am",
             exit: "16:00 am",
 
-            note: null,
+            note: "transpotation",
             attachments: []
           },
           {
-            date: "10.01.2019",
+            date: "10.02.2020",
             entry: "08:00 am",
             exit: "16:00 am",
-
             note: "entermainment",
             attachments: []
           }
@@ -362,7 +359,7 @@ class Dashboard extends React.Component {
         <figcaption
           style={{
             width: "20vw",
-            height: "20vh",
+            height: "40vh",
             border: "1px solid grey",
             margin: "1%",
             alignItems: "center",
@@ -370,6 +367,7 @@ class Dashboard extends React.Component {
           }}
         >
           <div>{this.state.tData[i].date}</div>
+
           <div
             style={{
               width: "20",
