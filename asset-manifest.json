@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.3e557bd9.chunk.css",
-    "main.js": "/static/js/main.1e1a81b2.chunk.js",
-    "main.js.map": "/static/js/main.1e1a81b2.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.b4af6cea.js",
-    "runtime-main.js.map": "/static/js/runtime-main.b4af6cea.js.map",
-    "static/js/2.a81ced3c.chunk.js": "/static/js/2.a81ced3c.chunk.js",
-    "static/js/2.a81ced3c.chunk.js.map": "/static/js/2.a81ced3c.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.e77a94023a3e11175c4a443e728651fe.js": "/precache-manifest.e77a94023a3e11175c4a443e728651fe.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.3e557bd9.chunk.css.map": "/static/css/main.3e557bd9.chunk.css.map",
-    "static/js/2.a81ced3c.chunk.js.LICENSE": "/static/js/2.a81ced3c.chunk.js.LICENSE"
+    "main.css": "/beatrixyu/Smart-Money-Pocket/static/css/main.50e39ee5.chunk.css",
+    "main.js": "/beatrixyu/Smart-Money-Pocket/static/js/main.adbc1c64.chunk.js",
+    "main.js.map": "/beatrixyu/Smart-Money-Pocket/static/js/main.adbc1c64.chunk.js.map",
+    "runtime-main.js": "/beatrixyu/Smart-Money-Pocket/static/js/runtime-main.fae6ae64.js",
+    "runtime-main.js.map": "/beatrixyu/Smart-Money-Pocket/static/js/runtime-main.fae6ae64.js.map",
+    "static/css/2.ac224ad8.chunk.css": "/beatrixyu/Smart-Money-Pocket/static/css/2.ac224ad8.chunk.css",
+    "static/js/2.fa8cc16e.chunk.js": "/beatrixyu/Smart-Money-Pocket/static/js/2.fa8cc16e.chunk.js",
+    "static/js/2.fa8cc16e.chunk.js.map": "/beatrixyu/Smart-Money-Pocket/static/js/2.fa8cc16e.chunk.js.map",
+    "index.html": "/beatrixyu/Smart-Money-Pocket/index.html",
+    "precache-manifest.978d800dc3845e66ab830ae382841536.js": "/beatrixyu/Smart-Money-Pocket/precache-manifest.978d800dc3845e66ab830ae382841536.js",
+    "service-worker.js": "/beatrixyu/Smart-Money-Pocket/service-worker.js",
+    "static/css/2.ac224ad8.chunk.css.map": "/beatrixyu/Smart-Money-Pocket/static/css/2.ac224ad8.chunk.css.map",
+    "static/css/main.50e39ee5.chunk.css.map": "/beatrixyu/Smart-Money-Pocket/static/css/main.50e39ee5.chunk.css.map",
+    "static/js/2.fa8cc16e.chunk.js.LICENSE": "/beatrixyu/Smart-Money-Pocket/static/js/2.fa8cc16e.chunk.js.LICENSE"
   },
   "entrypoints": [
-    "static/js/runtime-main.b4af6cea.js",
-    "static/js/2.a81ced3c.chunk.js",
-    "static/css/main.3e557bd9.chunk.css",
-    "static/js/main.1e1a81b2.chunk.js"
+    "static/js/runtime-main.fae6ae64.js",
+    "static/css/2.ac224ad8.chunk.css",
+    "static/js/2.fa8cc16e.chunk.js",
+    "static/css/main.50e39ee5.chunk.css",
+    "static/js/main.adbc1c64.chunk.js"
   ]
 }
